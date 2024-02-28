@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "HelloWorld.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "HelloWorld.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HelloWorld.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Application.dll": {}
+        }
+      },
+      "HelloWorld.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/HelloWorld.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Contracts.dll": {}
+        }
+      },
+      "HelloWorld.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        }
+      },
+      "HelloWorld.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "HelloWorld.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HelloWorld.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelloWorld.Application/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Application/HelloWorld.Application.csproj",
+      "msbuildProject": "../HelloWorld.Application/HelloWorld.Application.csproj"
+    },
+    "HelloWorld.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Contracts/HelloWorld.Contracts.csproj",
+      "msbuildProject": "../HelloWorld.Contracts/HelloWorld.Contracts.csproj"
+    },
+    "HelloWorld.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Domain/HelloWorld.Domain.csproj",
+      "msbuildProject": "../HelloWorld.Domain/HelloWorld.Domain.csproj"
+    },
+    "HelloWorld.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Infrastructure/HelloWorld.Infrastructure.csproj",
+      "msbuildProject": "../HelloWorld.Infrastructure/HelloWorld.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "HelloWorld.Application >= 1.0.0",
+      "HelloWorld.Contracts >= 1.0.0",
+      "HelloWorld.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Unkown\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Api\\HelloWorld.Api.csproj",
+      "projectName": "HelloWorld.Api",
+      "projectPath": "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Api\\HelloWorld.Api.csproj",
+      "packagesPath": "C:\\Users\\Unkown\\.nuget\\packages\\",
+      "outputPath": "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Unkown\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Application\\HelloWorld.Application.csproj": {
+              "projectPath": "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Application\\HelloWorld.Application.csproj"
+            },
+            "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Contracts\\HelloWorld.Contracts.csproj": {
+              "projectPath": "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Contracts\\HelloWorld.Contracts.csproj"
+            },
+            "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Infrastructure\\HelloWorld.Infrastructure.csproj": {
+              "projectPath": "E:\\Practic with Clean Architecture\\HelloWorld\\HelloWorld.Infrastructure\\HelloWorld.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.419\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

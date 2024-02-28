@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HelloWorld.Api/1.0.0": {
+        "dependencies": {
+          "HelloWorld.Application": "1.0.0",
+          "HelloWorld.Contracts": "1.0.0",
+          "HelloWorld.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "HelloWorld.Api.dll": {}
+        }
+      },
+      "HelloWorld.Application/1.0.0": {
+        "dependencies": {
+          "HelloWorld.Domain": "1.0.0"
+        },
+        "runtime": {
+          "HelloWorld.Application.dll": {}
+        }
+      },
+      "HelloWorld.Contracts/1.0.0": {
+        "runtime": {
+          "HelloWorld.Contracts.dll": {}
+        }
+      },
+      "HelloWorld.Domain/1.0.0": {
+        "runtime": {
+          "HelloWorld.Domain.dll": {}
+        }
+      },
+      "HelloWorld.Infrastructure/1.0.0": {
+        "dependencies": {
+          "HelloWorld.Application": "1.0.0"
+        },
+        "runtime": {
+          "HelloWorld.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelloWorld.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelloWorld.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelloWorld.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelloWorld.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelloWorld.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
